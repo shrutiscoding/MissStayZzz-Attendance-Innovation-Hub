@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="#C2185B"
+    android:outlineSpotShadowColor="#C2185B"
+    android:outlineAmbientShadowColor="#C2185B"
+    app:cardCornerRadius="5dp"
+    android:clipChildren="false"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/layoutOutpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtEnroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Enrollment No"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" /><TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Student Name"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txthostel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="9999999999"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txtroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="9999999999"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txtdepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Incoming Date"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txtyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="9999999999"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

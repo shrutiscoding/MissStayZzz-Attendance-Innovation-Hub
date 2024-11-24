@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+        <color name="colorPast">#AFA5A5</color> <!-- Red for past dates -->
+        <color name="colorFuture">#7A7AEB</color> <!-- Blue for future dates -->
+        <color name="colorToday">#E44E4E</color> <!-- Red for today -->
+        <color name="your_highlight_color">#303F9F</color> <!-- Red for today -->
+
+    <!-- Red color, you can change it to the color you prefer -->
+</resources>

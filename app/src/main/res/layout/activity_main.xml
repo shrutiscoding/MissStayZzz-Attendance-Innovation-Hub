@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgView1"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:src="@drawable/miss"/>
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:text="MissStayZzz"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btnAdminLogin"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:text="Admin Login"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:background="@drawable/btnrounded"
+            android:layout_margin="20dp"
+            android:onClick="btnAdminLoginClick"
+            />
+
+        <Button
+            android:id="@+id/btnWardenLogin"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:text="Warden Login"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:background="@drawable/btnrounded"
+            android:layout_margin="20dp"
+            android:onClick="btnWardenLoginClick"/>
+        <Button
+            android:id="@+id/btnOfficerLogin"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:text="Resi. Officer Login"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:background="@drawable/btnrounded"
+            android:layout_margin="20dp"
+            android:onClick="btnOfficerLoginClick">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

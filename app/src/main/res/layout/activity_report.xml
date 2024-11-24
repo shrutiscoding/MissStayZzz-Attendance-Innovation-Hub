@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".officer.ReportActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#84BAD6"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btnKrishna"
+        android:layout_width="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:text="Krishna"
+       />
+    <Button
+        android:id="@+id/btnVarana"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Varana"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/btnKrishna"/>
+    <Button
+        android:id="@+id/btnYerala"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Yerala"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/btnVarana"/>
+    <Button
+        android:id="@+id/btnGodavari"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Godavari"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/btnYerala"/>
+    <Button
+        android:id="@+id/btnKaveri"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Kaveri"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/btnGodavari"/>
+    <Button
+        android:id="@+id/btnChandrabhaga"
+        android:layout_width="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="Chandrabhaga"
+        android:layout_below="@id/btnKaveri"/>
+
+    <Button
+        android:id="@+id/btnRequestPDF"
+        android:layout_width="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="Indrayani"
+        android:layout_below="@id/btnChandrabhaga"/>
+
+    <Button
+        android:id="@+id/btnAllhostel"
+        android:layout_width="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="All Hostel"
+        android:layout_below="@id/btnRequestPDF"/>
+</RelativeLayout>

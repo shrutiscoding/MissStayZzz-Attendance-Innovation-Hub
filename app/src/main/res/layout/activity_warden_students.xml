@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84BAD6"
+    android:orientation="vertical"
+    tools:context=".warden.WardenStudentsActivity">
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Name"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edtSearch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Enroll"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:inputType="text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spnDept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"></Spinner>
+        <Spinner
+            android:id="@+id/spnHostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"></Spinner>
+        <Spinner
+            android:id="@+id/spnYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"></Spinner>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:id="@+id/rview">
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="end"
+        android:onClick="btnAddStudentClick"
+        android:layout_marginRight="10dp"
+        android:baselineAlignBottom="true"
+        />
+
+</LinearLayout>

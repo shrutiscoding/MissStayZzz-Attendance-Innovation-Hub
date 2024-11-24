@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/miss"
+        android:label="MissStayZzz"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hostel_App"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".admin.AdminReportActivity"
+            android:label="Download Report"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".officer.OfficerOutpassActivity"
+            android:label="Outpass Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateOfficerActivity"
+            android:label="Update Officer"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateWardenActivity"
+            android:label="Update Warden"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".officer.UpdateOutpassActivity"
+            android:exported="false"
+            android:label="Update Outpass"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".officer.Officer_OutpassesActivity"
+            android:exported="false"
+            android:label="Outpasses Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".admin.UpdateStudentActivity"
+            android:exported="false"
+            android:label="Update Student"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".warden.UpdateStudentActivity"
+            android:exported="false"
+            android:label="Update Student"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".warden.UpdateOutpassActivity"
+            android:exported="false"
+            android:label="Update Outpass"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".officer.ReportActivity"
+            android:exported="false"
+            android:label="Download Report"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".officer.PresentStudentActivity"
+            android:exported="false"
+            android:label="Present Students"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".officer.AbsentStudentActivity"
+            android:exported="false"
+            android:label="Absent Students"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".officer.AttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".warden.OutpassActivity"
+            android:exported="false"
+            android:label="Outpass Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".warden.WardenStudentActivity"
+            android:exported="false"
+            android:label="Student Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".warden.OutpassesActivity"
+            android:exported="false"
+            android:label="Outpasses Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".warden.WardenStudentsActivity"
+            android:exported="false"
+            android:label="Students Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".OfficerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.StudentActivity"
+            android:exported="false"
+            android:label="Student Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".admin.OfficerActivity"
+            android:exported="false"
+            android:label="Residential Officer Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".admin.WardenActivity"
+            android:exported="false"
+            android:label="Warden Detail"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".admin.OfficersActivity"
+            android:exported="false"
+            android:label="Residential Officers Details"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".admin.WardensActivity"
+            android:exported="false"
+            android:label="Wardens Details"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".admin.AdminStudentsActivity"
+            android:exported="false"
+            android:label="Students Details"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".officer.OfficerHomeActivity"
+            android:exported="false"
+            android:label="Residential Officer Home"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".warden.WardenHomeActivity"
+            android:exported="false"
+            android:label="Warden Home"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".admin.AdminHomeActivity"
+            android:exported="false"
+            android:label="Admin Home"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".WardenLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
